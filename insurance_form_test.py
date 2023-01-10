@@ -48,5 +48,7 @@ class TestTricentis(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == "__main__":
-    unittest.main()
+    with open("test_results.xml", "w") as f:
+        runner = XMLTestRunner(f)
+        unittest.main(testRunner=runner)
 

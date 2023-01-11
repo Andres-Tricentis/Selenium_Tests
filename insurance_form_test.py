@@ -60,7 +60,7 @@ class TestTricentis(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == "__main__":
-        with open("results.txt", "w") as f:
+        with open("results.xml", "w") as f:
             runner = unittest.TextTestRunner(f)
             unittest.main(testRunner=runner)
 
